@@ -1,0 +1,272 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+    margin: 10px;
+    padding: 10px;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+    background: #ffffff;
+    color: #414141;
+    height: 100%;
+    width: 100%;
+    font-family:  'Inconsolata', Monaco, "Lucida Console", monospace;
+    font-size: 13px;
+    line-height: 1.2;
+	orphans: 3;
+	/*overflow-x: scroll;*/
+	overflow-x: hidden !important; /*test*/
+	overflow-y: auto;
+}
+
+a { 
+background:#EEE;
+text-decoration:none;
+cursor:pointer;
+color:#414141;
+}
+
+a:hover {
+	background:#000;
+	color:#fff;
+}
+
+
+/* Index / Images
+***********************************************************************************************************/
+.image_container{
+	clear:both;
+	width:200x;
+	display:block;
+	position: relative;
+	margin-bottom:5px;
+	text-align:center !important;
+	z-index:-1;
+}
+
+#index_img{
+	max-width:95px !important;
+	height: auto;
+	margin-bottom:auto;
+	display:inline;
+}
+
+#thumbnail{
+	z-index:auto;
+}
+
+
+/* Menu / Navigation
+***********************************************************************************************************/
+#menu_container {
+		overflow: hidden;
+ width:95%;	
+ background:#fff;
+	height:100px;
+	padding-top:10px;
+	position: fixed;
+	z-index:100;
+	min-width:900px;
+
+}
+#menu_container .menu {
+	width:200px;
+	float:left;
+	padding:5 px;
+	margin-right: 25px;
+		line-height:2;
+	
+
+	}
+#menu_container .menu a{
+	text-decoration:none;  
+	color:#414141;
+	font-size:13px; 
+	background:#fff;
+}
+#menu_container .menu a:hover{
+	cursor:crosshair;
+	text-decoration:none; 
+	color:#fff;
+	background:#000 !important;
+}
+
+#menu_container .blank {
+	letter-spacing:-6px;
+	background:#fff;
+	margin:2px;}
+	
+	
+	/* Body Columns
+***********************************************************************************************************/
+.entry_container {
+	width:90%; 
+	position:absolute;
+	top:180px;
+	min-width:900px;
+	z-index:-20;
+}
+
+.entry {
+	vertical-align: top;
+	position:relative;
+	display: inline-block;
+	padding:5 px;
+	padding-top:5px;
+	margin-top:5px;
+	margin-bottom:0px;
+	margin-right: 19px;
+	border-top:dashed;
+	border-top-width:1px;
+	line-height:1.5;
+	cursor:crosshair;
+	width:200px;
+}
+
+.content {
+	position:relative;
+	overflow:hidden !important;'
+}
+
+.entry:hover{
+	border:dashed;
+	border-width:1px;
+	}
+
+.content {
+	padding:5px;
+	clear:both;
+}
+
+.footer{
+position: fixed;
+bottom: 5px;
+}
+
+
+	/* Typography
+***********************************************************************************************************/
+
+.category {
+	color:#999;
+	font-size:13px;
+	text-align:left;
+	border-top:dashed;
+	border-top-width:1px;
+	border-top-color:#000;
+	margin:3px;
+	padding:5px;
+}
+
+.category_2 {
+	color:#999;
+	font-size:13px;
+	text-align:left;
+
+	
+	margin:3px;
+	padding:5px;
+}
+.description {
+	font-size:20px;
+	text-align:center !important;
+	font-family:
+'inconsolata';
+font-style:italic;
+	line-height:32px;
+	word-spacing:-1px;
+	padding:10px;	
+	min-height:130px;
+	vertical-align:middle;
+	}
+
+.title {
+	text-align:center;
+text-decoration:underline;
+		line-height:1.5;
+		margin-bottom:10px;
+
+}
+
+
+/* Single Page display
+***********************************************************************************************************/
+
+
+.single_entry_title {
+	top:150px;
+	position:relative;
+	float:left;
+	padding:5 px;
+	padding-top:10px;
+	margin-right: 25px;
+	z-index: 1;
+	border-top:dashed;
+	border-top-width:1px;
+	font-style:normal;
+	line-height:1.5;
+	width:200px;
+
+	background-color:#FFF;
+}
+.single_entry {
+	top:150px;
+	overflow-y: auto;
+	position:relative;
+	float:left;
+	width:600px;
+	padding:5 px;
+	padding-top:10px;
+	padding-right:5px;
+	margin-right: 25px;
+	z-index: 1;
+	border-top:dashed;
+	border-top-width:1px;
+	font-style:normal;
+	line-height:1.5;
+}
+
+
+
+
+	/* Opened columns
+***********************************************************************************************************/
+
+.opened {
+	top:150px;
+	cursor: auto;
+	color: #414141;
+	padding-right: 2em;
+	overflow: scroll;
+}
+
+.opened .tools{
+	display: block;
+}
+.opened .postTags li, .opened .postAuthors li{
+	display: inline;
+}
+
+	
+.draggable {
+	position:absolute;
+}
+
+.draggable img{
+	width:500px;
+	height:auto;
+}
+
+#draggable_container {
+	top:180px;
+    width: 900px;
+	height: 500px;
+}
