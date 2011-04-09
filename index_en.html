@@ -10,7 +10,11 @@
 <link href='http://fonts.googleapis.com/css?family=Inconsolata|Inconsolata:italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
 
-
+<script type="text/javascript">
+function changeBgImage (image) {
+	this.style.backgroundImage = "url("+image+")";
+}
+</script>
 
 </head>
 
@@ -50,14 +54,14 @@ Graphic Designer<br /></div>
  
  <div class="entry_container"> 
 	<div class="entry">
-		<div class="description">What can we do to help North Korean escapees?
+		<div class="description">What can we be done to help North Korean escapees?
 		</div >
         <div class="category">PRINT / 2010 / <br />Another: Being on the Other Side of the River </div>
 	</div>
 
 	<div class="entry">
 		
-		<div class="description">Away from <br />
+		<div class="description" onMouseover="this.style.background = 'url(file:///Users/Aiyah/hellome/hellome_ver2/images/uts10-thumb.gif) center center'">Away from <br />
 	    the hatching eggs</div ><div class="category">IDENTITY / 2010 / <br />
 UTS DESIGN 10</div>
 	</div>
@@ -91,9 +95,14 @@ Eco-(un)-Friednly Book</div>
 </div>
 
 
-<div onclick="location.href='file:///Users/Aiyah/hellome/labella_sample.html';" class="entry">
-<div class="description" style="background-image:url(images/bella.png) no-repeat;">Observing <br />
-  Milan's Beauty. </div ><div class="category">PRINT / 2008 / <br />
+<div onclick="location.href='file:///Users/Aiyah/hellome/hellome_ver2/labella_sample.html';" class="entry" onmouseover="document.getElementById(image_bg).style.visibility='visible'">
+
+<div class="description">Observing <br />
+  Milan's Beauty. 
+  <div id="image_bg" style="width:200px; height:inherit; vertical-align:middle !important; overflow:hidden; position:absolute !important; top:0px; left:0px; z-index:-5; visibility:hidden;"><img src="../images/1.jpg" width="100%" /></div> 
+  </div >
+  
+  <div class="category">PRINT / 2008 / <br />
 La Bella Figura Milanese <br />
 [Milan's Beautiful Figure]</div>
 </div>

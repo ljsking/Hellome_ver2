@@ -40,29 +40,6 @@ a:hover {
 }
 
 
-/* Index / Images
-***********************************************************************************************************/
-.image_container{
-	clear:both;
-	width:200x;
-	display:block;
-	position: relative;
-	margin-bottom:5px;
-	text-align:center !important;
-	z-index:-1;
-}
-
-#index_img{
-	max-width:95px !important;
-	height: auto;
-	margin-bottom:auto;
-	display:inline;
-}
-
-#thumbnail{
-	z-index:auto;
-}
-
 
 /* Menu / Navigation
 ***********************************************************************************************************/
@@ -112,7 +89,6 @@ a:hover {
 	position:absolute;
 	top:180px;
 	min-width:900px;
-	z-index:-20;
 }
 
 .entry {
@@ -127,19 +103,11 @@ a:hover {
 	border-top:dashed;
 	border-top-width:1px;
 	line-height:1.5;
-	cursor:crosshair;
-	width:200px;
-}
+	width:200px;}
 
-.content {
-	position:relative;
-	overflow:hidden !important;'
+.entry:hover {
+	cursor:e-resize;
 }
-
-.entry:hover{
-	border:dashed;
-	border-width:1px;
-	}
 
 .content {
 	padding:5px;
@@ -178,14 +146,14 @@ bottom: 5px;
 .description {
 	font-size:20px;
 	text-align:center !important;
-	font-family:
-'inconsolata';
-font-style:italic;
+	font-family: 'inconsolata';
+	font-style:italic;
 	line-height:32px;
 	word-spacing:-1px;
 	padding:10px;	
 	min-height:130px;
 	vertical-align:middle;
+	z-index:1;
 	}
 
 .title {
@@ -237,23 +205,8 @@ text-decoration:underline;
 
 
 
-	/* Opened columns
+	/* Draggable images
 ***********************************************************************************************************/
-
-.opened {
-	top:150px;
-	cursor: auto;
-	color: #414141;
-	padding-right: 2em;
-	overflow: scroll;
-}
-
-.opened .tools{
-	display: block;
-}
-.opened .postTags li, .opened .postAuthors li{
-	display: inline;
-}
 
 	
 .draggable {
@@ -263,6 +216,7 @@ text-decoration:underline;
 .draggable img{
 	width:500px;
 	height:auto;
+	z-index:0;
 }
 
 #draggable_container {
@@ -270,3 +224,22 @@ text-decoration:underline;
     width: 900px;
 	height: 500px;
 }
+
+/* for detailed page ****************************/
+#draggable_container_2 {
+	position:absolute;
+	top:190px;
+	left:265px;
+    width: 700px;
+	height: 500px;
+}
+
+.draggable_2 {
+	max-width:1000px;
+	width:600px;
+	position:relative;
+}
+.draggble_2 img{
+	width:100% !important;}
+
+

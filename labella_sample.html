@@ -12,31 +12,22 @@
 
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 
+<link href="js/jquery-jquery-ui-09dd8d2/themes/base/jquery.ui.base.css" />
 	
-        <script type="text/javascript" src="z_jquery for images/scriptaculous-js-1.8.1/lib/prototype.js">
-		</script>
-	
-        <script type="text/javascript" src="z_jquery for images/scriptaculous-js-1.8.1/src/scriptaculous.js?load=effects,dragdrop"></script>
+       <script src="js/jquery-jquery-ui-09dd8d2/jquery-1.5.1.js"></script>
+       <script src="js/jquery-jquery-ui-09dd8d2/ui/jquery.ui.core.js"></script>
+       <script src="js/jquery-jquery-ui-09dd8d2/ui/jquery.ui.widget.js"></script>
+       <script src="js/jquery-jquery-ui-09dd8d2/ui/jquery.ui.mouse.js"></script>
+       <script src="js/jquery-jquery-ui-09dd8d2/ui/jquery.ui.resizable.js"></script>
 
-<script type="text/javascript">
-	
-window.onload=function() {
-	//make all the images draggables from draggable division. 
-	$A($('draggables').getElementsByTagName('img')).each(
-		function(item) {
-		new Draggable(item, {});
-			}
-		);
-		$A($('draggables').getElementsByTagName('div')).each(
-		function(item) {
-		new Draggable(item, {});
-			}
-		);
-}
+<link href="js/jquery-jquery-ui-09dd8d2/demos/demos.css" />
 
-	
-</script>
-
+<script>
+	$(function() {
+		$( ".draggable_2" ).resizable({
+		});
+	});
+	</script>
 
 </head>
 
@@ -101,17 +92,18 @@ This study was presented in street fashion photography format, often found in fa
 
 </div>
 
+<div id='draggable_container_2'>
 
-<div id="draggables" style=" position:absolute; left:260px; top:180px; 	display: inline-block;
-">
+<div class="draggable_2">
+<img src="images/1.jpg" width="100%" /></div>
+<div class="draggable_2">
+<img src="images/2.jpg" width="100%" /></div>
+<div class="draggable_2">
+
+<img src="images/3.jpg" width="100%" />
 
 
-<img src="images/1.jpg" width="600" />
-<img src="images/2.jpg" width="600" />
-<img src="images/3.jpg" width="600" />
-
-
-</div>
+</div></div>
 
 <div class="footer">
 
